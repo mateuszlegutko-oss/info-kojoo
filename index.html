@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>10 powodów, dla których tysiące właścicieli psów zachwala tę matę chłodzącą</title>
+<meta name="description" content="Twój pies schodzi z legowiska i kładzie się na kafelkach. To nie kaprys. Oto dlaczego — i co możesz z tym zrobić.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --navy:#163450;
+  --blue:#2E7CB8;
+  --blue-link:#2563C9;
+  --bg:#FFFFFF;
+  --panel:#F5F5F5;
+  --text:#3E4C59;
+  --muted:#6B7A88;
+  --line:#E4E9ED;
+  --cta:#2B4BA0;
+  --cta-hover:#1E3A7F;
+  --max:1120px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{
+  font-family:'Poppins',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  font-size:16px;line-height:1.62;color:var(--text);background:var(--bg);
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 22px}
+p{margin:0 0 1em}
+strong{color:var(--navy);font-weight:700}
+em{font-style:italic}
+
+/* ===== PASEK GÓRNY ===== */
+.topbar{
+  background:var(--navy);color:#fff;text-align:center;
+  padding:11px 16px;font-size:.78rem;font-weight:700;letter-spacing:.04em;
+}
+.topbar span{opacity:.85;font-weight:500}
+
+/* ===== NAGŁÓWEK STRONY ===== */
+.masthead{
+  border-bottom:1px solid var(--line);padding:18px 0;
+  display:flex;align-items:center;justify-content:center;
+}
+.masthead__logo{
+  font-weight:800;font-size:1.35rem;color:var(--navy);letter-spacing:.14em;
+}
+
+/* ===== TYTUŁ ARTYKUŁU ===== */
+.headline{padding:40px 0 8px}
+.headline h1{
+  font-size:clamp(1.5rem,3.4vw,2.05rem);line-height:1.28;
+  color:var(--navy);font-weight:800;letter-spacing:-.01em;
+}
+.headline h1 .hl{color:var(--blue-link)}
+
+/* ===== AUTOR ===== */
+.byline{
+  display:flex;align-items:center;gap:16px;
+  padding:24px 0 6px;
+}
+.byline__avatar{
+  width:64px;height:64px;border-radius:50%;overflow:hidden;flex:0 0 64px;
+  background:var(--panel);border:2px solid var(--line);
+}
+.byline__avatar img{width:100%;height:100%;object-fit:cover;display:block}
+.byline__meta{font-size:.92rem;font-weight:700;color:var(--navy)}
+
+/* ===== LEAD ===== */
+.lead{
+  max-width:640px;margin:0 auto;padding:16px 0 26px;
+  text-align:center;font-size:.95rem;color:var(--text);
+}
+.rule{height:1px;background:var(--line);max-width:860px;margin:0 auto 44px}
+
+/* ===== PUNKT LISTICLE ===== */
+.point{
+  display:grid;grid-template-columns:1fr 1fr;gap:64px;
+  align-items:center;margin-bottom:64px;
+}
+.point__media{
+  border-radius:4px;overflow:hidden;background:var(--panel);
+  line-height:0;
+}
+.point__media a{display:block;line-height:0}
+.point__media img,
+.point__media video{width:100%;height:auto;display:block}
+.point__body h2{
+  font-size:clamp(1.3rem,2.6vw,1.65rem);line-height:1.28;
+  color:var(--navy);font-weight:800;margin-bottom:14px;letter-spacing:-.01em;
+}
+.point__body p{font-size:.93rem;margin-bottom:.9em}
+.point__body p:last-child{margin-bottom:0}
+.quote{
+  color:var(--text);font-style:normal;
+}
+.quote cite{font-style:italic;color:var(--muted);font-weight:600}
+
+
+/* ===== BLOK OFERTY ===== */
+.offer{
+  background:var(--panel);border-radius:4px;
+  padding:38px 40px;margin:16px 0 26px;
+}
+.offer h2{
+  text-align:center;font-size:clamp(1.15rem,2.4vw,1.4rem);
+  color:var(--navy);font-weight:800;margin-bottom:26px;
+}
+.offer__body{max-width:620px;margin:0 auto;font-size:.93rem}
+.offer__body p{margin-bottom:.85em}
+
+/* ===== CTA ===== */
+.cta{
+  display:block;width:100%;background:var(--cta);color:#fff;
+  text-align:center;text-decoration:none;
+  padding:19px 24px;border-radius:4px;
+  font-weight:700;font-size:.95rem;letter-spacing:.02em;
+  transition:background .18s ease,transform .18s ease;
+  margin-bottom:12px;
+}
+.cta:hover{background:var(--cta-hover);transform:translateY(-1px)}
+.cta:focus-visible{outline:3px solid var(--navy);outline-offset:3px}
+
+.microbar{
+  background:var(--panel);border-radius:4px;
+  padding:13px 20px;margin-bottom:16px;
+  font-size:.83rem;color:var(--muted);
+  display:flex;align-items:center;justify-content:center;
+  flex-wrap:wrap;gap:0 4px;
+}
+.microbar__item{white-space:nowrap}
+.microbar b{color:#C0392B;font-weight:700}
+.microbar strong{color:var(--navy);font-weight:700}
+.microbar .sep{margin:0 10px;opacity:.4}
+@media(max-width:420px){
+  .microbar{font-size:.78rem;padding:12px 14px}
+  .microbar .sep{margin:0 7px}
+}
+.guarantee-line{
+  text-align:center;font-size:.85rem;color:var(--muted);
+  padding-bottom:56px;
+}
+
+
+/* ===== STICKY CTA (mobile) ===== */
+.sticky-cta{
+  display:none;position:fixed;left:0;right:0;bottom:0;z-index:99;
+  background:rgba(255,255,255,.97);border-top:1px solid var(--line);
+  padding:10px 14px;box-shadow:0 -4px 20px rgba(0,0,0,.12);
+}
+.sticky-cta a{
+  display:block;background:var(--cta);color:#fff;text-decoration:none;
+  text-align:center;padding:15px;border-radius:4px;
+  font-weight:700;font-size:.92rem;
+}
+.sticky-cta a:active{background:var(--cta-hover)}
+@media(max-width:860px){
+  .sticky-cta{display:block}
+  body{padding-bottom:76px}
+}
+
+/* ===== NOTA PRAWNA ===== */
+.disclaimer{
+  border-top:1px solid var(--line);
+  padding:26px 0 40px;
+  font-size:.78rem;color:var(--muted);line-height:1.6;
+}
+
+/* ===== STOPKA ===== */
+.footer{background:var(--cta);color:#fff;padding:44px 0 30px;font-size:.86rem}
+.footer__grid{display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:40px}
+.footer h4{font-weight:700;margin-bottom:12px;font-size:.95rem}
+.footer a{color:#fff;text-decoration:none;opacity:.9;display:block;margin-bottom:7px}
+.footer a:hover{opacity:1;text-decoration:underline}
+.footer p{opacity:.9;margin-bottom:.7em}
+.footer__logo{font-weight:800;font-size:1.15rem;letter-spacing:.12em;margin-top:22px}
+.footer__bottom{
+  border-top:1px solid rgba(255,255,255,.2);margin-top:30px;padding-top:18px;
+  font-size:.76rem;opacity:.75;
+}
+
+/* ===== RESPONSYWNOŚĆ ===== */
+@media(max-width:860px){
+  .point{grid-template-columns:1fr;gap:22px;margin-bottom:48px}
+  .point__media{order:-1}
+  .footer__grid{grid-template-columns:1fr;gap:26px}
+  .offer{padding:28px 22px}
+  .headline{padding:28px 0 6px}
+}
+@media(max-width:480px){
+  .byline{gap:12px}
+  .byline__avatar{width:52px;height:52px;flex:0 0 52px}
+  }
+@media(prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+
+<!-- ══════════ PASEK GÓRNY ══════════ -->
+<div class="topbar">
+  KUP 1, DRUGĄ OTRZYMASZ GRATIS <span>| Promocja trwa do końca tygodnia</span>
+</div>
+
+<!-- ══════════ NAGŁÓWEK ══════════ -->
+<header class="masthead">
+  <div class="masthead__logo">KOJO</div>
+</header>
+
+<main>
+<div class="wrap">
+
+  <!-- ══════════ TYTUŁ ══════════ -->
+  <div class="headline">
+    <h1>
+      10 powodów, dla których tysiące właścicieli psów zachwala tę matę chłodzącą,
+      <span class="hl">która wreszcie zapewnia ich psom chłód, spokój i komfort</span>
+    </h1>
+  </div>
+
+  <!-- ══════════ AUTOR ══════════ -->
+  <div class="byline">
+    <div class="byline__avatar">
+      <img src="images/autor.jpg" alt="Anna Wrzesińska">
+    </div>
+    <div class="byline__meta">Anna Wrzesińska &nbsp;|&nbsp; 23 czerwca 2026 &nbsp;|&nbsp; 10:35</div>
+  </div>
+
+  <!-- ══════════ LEAD ══════════ -->
+  <p class="lead">
+    Jeśli kiedykolwiek patrzyłaś, jak Twój pies <strong>dyszy bez końca, wierci się i wyraźnie cierpi</strong> w upale,
+    to zrozumiesz, dlaczego <strong>tysiące właścicieli psów</strong> mówi o tej macie chłodzącej, że jest <strong>prawdziwym ratunkiem</strong>.
+  </p>
+
+  <div class="rule"></div>
+
+  <!-- ══════════ 1 ══════════ -->
+  <section class="point">
+    <div class="point__media">
+      <video autoplay loop muted playsinline preload="auto" aria-label="Pies odpoczywający na macie chłodzącej Kojo">
+          <source src="video/01.webm" type="video/webm">
+          <source src="video/01.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div class="point__body">
+      <h2>1. Spokój ducha, gdy nie możesz przy nim być</h2>
+      <p>Materiał maty Kojo <strong>odbiera nadmiar ciepła</strong> z ciała psa, dzięki czemu może on odpoczywać w komfortowej temperaturze <strong>nawet wtedy, gdy nie ma Cię w domu</strong>. Pomaga psu pozostać spokojnym i wygodnie ułożonym — a Tobie daje <strong>prawdziwy spokój ducha</strong>.</p>
+      <p class="quote">„Wracałam do domu i zastawałam psa zdyszanego i niespokojnego. Od kiedy ma matę, jest spokojny, zadowolony i wreszcie wygodnie mu w upalne dni. To ogromna <strong>ulga wiedzieć, że wszystko z nim w porządku</strong>." — <cite>Emilia R.</cite></p>
+    </div>
+  </section>
+
+  <!-- ══════════ 2 ══════════ -->
+  <section class="point">
+    <div class="point__media">
+      <video autoplay loop muted playsinline preload="auto" aria-label="Pies szukający chłodu w upalny dzień">
+          <source src="video/02.webm" type="video/webm">
+          <source src="video/02.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div class="point__body">
+      <h2>2. Chroni Twojego psa przed męczącym upałem</h2>
+      <p>W skwarne dni <strong>upał uderza w psy szybko</strong> — prowadzi do wyczerpania i skrajnego zmęczenia. Dla właściciela <strong>patrzenie na to jest rozdzierające</strong>.</p>
+      <p>Właśnie dlatego potrzebujesz maty, która <strong>daje psu chłodniejsze miejsce, zanim upał zdąży mu dokuczyć</strong>. Chłodzące włókna maty Kojo są <strong>chłodne w dotyku od pierwszej chwili</strong> — dzięki czemu pies <strong>odpręża się od razu</strong> i pozostaje <strong>spokojny i wygodnie ułożony przez wiele godzin</strong>.</p>
+    </div>
+  </section>
+
+  <!-- ══════════ 3 ══════════ -->
+  <section class="point">
+    <div class="point__media">
+      <video autoplay loop muted playsinline preload="auto" aria-label="Bezpieczny materiał maty — bez żelu">
+          <source src="video/03.webm" type="video/webm">
+          <source src="video/03.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div class="point__body">
+      <h2>3. Bez toksyn, bez żelu — po prostu naturalny chłód</h2>
+      <p>Większość mat „chłodzących" opiera się na <strong>chemicznym żelu</strong>, który może przeciekać, brzydko pachnieć, a nawet zaszkodzić psu. Nic dziwnego, że tyle z nich <strong>ląduje w koszu</strong> po kilku użyciach.</p>
+      <p>Dlatego stworzyliśmy matę Kojo — <strong>całkowicie nietoksyczną, bez żelu i chłodną w dotyku w sposób naturalny</strong>. Chłodzące włókna są <strong>wplecione w trwały materiał</strong> — wystarczająco wytrzymały do codziennego użytku, <strong>bezpieczny nawet gdy pies go poliże lub pogryzie</strong>, i miękki na każdą drzemkę.</p>
+    </div>
+  </section>
+
+  <!-- ══════════ 4 ══════════ -->
+  <section class="point">
+    <div class="point__media">
+      <video autoplay loop muted playsinline preload="auto" aria-label="Pies wreszcie odpoczywa spokojnie">
+          <source src="video/04.webm" type="video/webm">
+          <source src="video/04.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div class="point__body">
+      <h2>4. Od niespokojnego do wyluzowanego</h2>
+      <p><strong>Patrzenie, jak pies dyszy bez końca</strong>, krąży po domu i nie potrafi się ułożyć, jest <strong>rozdzierające</strong>. Czujesz się <strong>bezradna</strong> i chciałabyś tylko, żeby znowu było mu dobrze.</p>
+      <p>Właśnie dlatego tylu właścicieli sięga po matę Kojo. Pomaga psu <strong>wreszcie się odprężyć</strong> — koniec z krążeniem i ciężkim dyszeniem, zamiast tego <strong>spokojne drzemki</strong> i ten <strong>zadowolony wyraz pyska</strong>, który każdy właściciel chce zobaczyć.</p>
+      <p>Nawet wybredne psy zwykle <strong>szybko układają się na macie</strong>, bo czują, że jest <strong>naturalnie chłodna i bezpieczna</strong>.</p>
+    </div>
+  </section>
+
+  <!-- ══════════ 5 ══════════ -->
+  <section class="point">
+    <div class="point__media">
+      <video autoplay loop muted playsinline preload="auto" aria-label="Pies znowu pełen energii">
+          <source src="video/05.webm" type="video/webm">
+          <source src="video/05.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div class="point__body">
+      <h2>5. Zobacz, jak Twój pies znowu staje się sobą</h2>
+      <p>Gdy psu jest <strong>chłodno i wygodnie</strong>, cały dom oddycha lżej. <strong>Dyszenie ustaje</strong>, ogon znowu zaczyna machać, a w oczach wraca ta <strong>iskra</strong>.</p>
+      <p>Nagle jest <strong>spokojny, chętny do zabawy i pełen życia</strong> — a Ty wreszcie możesz się odprężyć, bo wiesz, że naprawdę jest mu dobrze.</p>
+      <p>Mata Kojo pomaga odzyskać te <strong>zwyczajne, radosne chwile</strong>, dla których warto mieć psa.</p>
+    </div>
+  </section>
+
+  <!-- ══════════ 6 ══════════ -->
+  <section class="point">
+    <div class="point__media">
+      <img src="images/06.jpg" alt="Mata chłodząca Kojo — można prać w pralce">
+    </div>
+    <div class="point__body">
+      <h2>6. Łatwa w praniu, zrobiona na lata</h2>
+      <p>Większość mat „chłodzących" <strong>szybko się zużywa</strong>: rwie się, traci właściwości albo zaczyna nieprzyjemnie pachnieć. <strong>Frustrujące</strong>, gdy musisz ciągle wymieniać coś, co pies polubił.</p>
+      <p>Mata Kojo jest zrobiona <strong>na prawdziwe życie</strong>. Można ją <strong>prać w pralce</strong>, szybko schnie i jest wzmocniona tak, by wytrzymać <strong>pazury, gryzaki i codzienne używanie</strong>.</p>
+      <p>Pozostaje miękka, świeża i chłodna — <strong>lato po lecie</strong>.</p>
+    </div>
+  </section>
+
+  <!-- ══════════ 7 ══════════ -->
+  <section class="point">
+    <div class="point__media">
+      <img src="images/07.jpg" alt="Jak działa mata chłodząca Kojo — wykres oddawania ciepła">
+    </div>
+    <div class="point__body">
+      <h2>7. Konkretny mechanizm, a nie marketingowy bełkot</h2>
+      <p>Większość mat „chłodzących" <strong>pozostaje chłodna tylko przez kilka minut</strong>, po czym zaczyna <strong>zatrzymywać ciepło</strong> — i pies dyszy na czymś, co miało mu pomóc. Tanie żele i powłoki <strong>szybko się zużywają</strong>. To zwykłe chwyty marketingowe w ładnym opakowaniu.</p>
+      <p>Mata Kojo działa inaczej. Jej <strong>chłodzące włókna odbierają ciepło z ciała psa i oddają je do otoczenia</strong>, zamiast je gromadzić. Efekt chłodzenia jest <strong>wpleciony w materiał, a nie napylony na powierzchnię</strong> — dlatego <strong>nie znika po kolejnych praniach</strong>.</p>
+    </div>
+  </section>
+
+  <!-- ══════════ 8 ══════════ -->
+  <section class="point">
+    <div class="point__media">
+      <img src="images/08.jpg" alt="Mata chłodząca Kojo — rekomendacja specjalistów">
+    </div>
+    <div class="point__body">
+      <h2>8. Specjaliści i właściciele psów są zgodni</h2>
+      <p>Weterynarze i specjaliści od zwierząt <strong>w całej Polsce</strong> chwalą matę Kojo za to, że <strong>wreszcie utrzymuje psy w chłodzie, spokoju i komforcie</strong> podczas najcięższych letnich dni. Wielu z nich poleca ją własnym klientom i znajomym, których psy źle znoszą upały.</p>
+      <p>Jedną z nich jest <strong>Sylwia M.</strong>, która zna tę walkę aż za dobrze.</p>
+      <p class="quote">„Poprzedniego lata <strong>byłam przerażona</strong> o mojego starszego psa, Maksa. Krążył po mieszkaniu i <strong>dyszał</strong>, nie mógł się ułożyć, <strong>cokolwiek próbowałam</strong> — wentylator, kafelki, mokre ręczniki. Nic nie działało. Gdy dostaliśmy matę Kojo, <strong>różnica była jak dzień i noc</strong>. W kilka minut Maks przestał dyszeć i <strong>wreszcie odpoczął</strong>. Teraz drzemie spokojnie każdego popołudnia, a ja mogę <strong>odetchnąć, wiedząc, że wszystko z nim dobrze</strong>." — <cite>Sylwia M.</cite></p>
+    </div>
+  </section>
+
+  <!-- ══════════ 9 ══════════ -->
+  <section class="point">
+    <div class="point__media">
+      <img src="images/09.jpg" alt="30 dni gwarancji zwrotu pieniędzy — Kojo">
+    </div>
+    <div class="point__body">
+      <h2>9. Gwarancja zwrotu pieniędzy — bez zbędnych pytań</h2>
+      <p>Jesteśmy tak pewni, że pokochasz swoją matę Kojo, że dajemy Ci <strong>30-dniową gwarancję zwrotu pieniędzy bez zadawania pytań</strong>.</p>
+      <p>Jeśli z jakiegokolwiek powodu nie będziesz w pełni zadowolona — <strong>wystarczy, że dasz nam znać, a z przyjemnością zwrócimy Ci pieniądze</strong>.</p>
+      <p>Bez formularzy na trzy strony i bez tłumaczenia się. <strong>Ryzyko jest po naszej stronie.</strong></p>
+    </div>
+  </section>
+
+  <!-- ══════════ 10 ══════════ -->
+  <section class="point">
+    <div class="point__media">
+      <img src="images/10.jpg" alt="Psy odpoczywające na macie chłodzącej Kojo">
+    </div>
+    <div class="point__body">
+      <h2>10. Dołącz do właścicieli, których psy wreszcie odpoczywają w chłodzie</h2>
+      <p>Dołącz do rosnącego grona <strong>właścicieli psów</strong>, którzy wreszcie znaleźli lepszy sposób na to, żeby ich psy przetrwały upały <strong>w chłodzie i komforcie</strong>.</p>
+      <p>Ich pupile są <strong>spokojniejsze i szczęśliwsze</strong> — ogony machają, dyszenia coraz mniej, a odpoczynek wreszcie jest <strong>naprawdę spokojny</strong>.</p>
+    </div>
+  </section>
+
+  <!-- ══════════ OFERTA ══════════ -->
+  <div class="offer">
+    <h2>🔥 WYPRZEDAŻ NA FALĘ UPAŁÓW — KUP 1, DRUGĄ OTRZYMASZ GRATIS!</h2>
+    <div class="offer__body">
+      <p>W tej chwili mata chłodząca Kojo jest dostępna <strong>wyłącznie na naszej stronie</strong>.</p>
+      <p>⚠️ Uruchomiliśmy specjalną ofertę na start, <strong>ograniczoną czasowo</strong> — <em><strong>kup 1, drugą otrzymasz gratis!</strong></em></p>
+      <p>Oferta obowiązuje <strong>tylko do wyczerpania zapasów</strong>.</p>
+      <p>Przestań się martwić dyszeniem i przegrzewaniem. Mata Kojo sprawia, że pies czuje się <strong>bezpiecznie, swobodnie i komfortowo</strong>, gdziekolwiek jesteście. Bo nie ma nic lepszego niż świadomość, że <strong>Twojemu psu jest dobrze</strong>.</p>
+      <p>🔥 Pamiętaj: <strong><em>wypoczęty pies to szczęśliwy pies.</em></strong> A szczęśliwy pies to szczęśliwszy dom.</p>
+    </div>
+  </div>
+
+  <a href="https://bambosoo.pl/products/matachlodzaca" class="cta">KLIKNIJ TUTAJ, ŻEBY SPRAWDZIĆ CENĘ I DOSTĘPNOŚĆ 👉</a>
+
+  <div class="microbar">
+    <span class="microbar__item">Ryzyko wyprzedania:&nbsp;<b>wysokie</b></span>
+    <span class="sep">|</span>
+    <span class="microbar__item"><strong>DARMOWA</strong>&nbsp;dostawa</span>
+  </div>
+
+  <p class="guarantee-line">Wypróbuj już dziś z 30-dniową gwarancją zwrotu pieniędzy!</p>
+
+  <!-- ══════════ NOTA PRAWNA ══════════ -->
+  <div class="disclaimer">
+    <p><strong>Ważne:</strong> Mata Kojo zwiększa komfort odpoczynku psa w ciepłe dni. <strong>Nie zastępuje dostępu do wody, cienia, wentylacji ani opieki weterynaryjnej.</strong> W upalne dni zawsze zapewnij psu wodę i chłodne miejsce, ogranicz aktywność w godzinach największego nasłonecznienia i nigdy nie zostawiaj go w nagrzanym samochodzie.</p>
+    <p>Jeśli zauważysz objawy alarmowe — bardzo intensywne dyszenie, osłabienie, wymioty, chwiejny chód lub utratę przytomności — <strong>natychmiast skontaktuj się z lekarzem weterynarii.</strong></p>
+    <p>Opinie klientów opisują indywidualne doświadczenia. Reakcja każdego psa na matę może być inna.</p>
+  </div>
+
+</div>
+</main>
+
+<!-- ══════════ STOPKA ══════════ -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__grid">
+      <div>
+        <p>W <strong>Kojo</strong> zajmujemy się jednym: żeby Twój pies miał gdzie odpocząć, kiedy zrobi się gorąco.</p>
+        <p>Obsługa klienta dostępna <strong>od poniedziałku do piątku</strong>.</p>
+        <p>✉️ kontakt@kojo.pl</p>
+        <div class="footer__logo">KOJO</div>
+      </div>
+      <div>
+        <h4>Newsletter</h4>
+        <p>Zapisz się, żeby dostać informację przed kolejną falą upałów.</p>
+      </div>
+      <div>
+        <h4>Pomoc</h4>
+        <a href="#">Regulamin</a>
+        <a href="#">Zwroty i reklamacje</a>
+        <a href="#">Kontakt</a>
+        <a href="#">Polityka prywatności</a>
+      </div>
+    </div>
+    <div class="footer__bottom">© 2026 Kojo. Wszelkie prawa zastrzeżone.</div>
+  </div>
+</footer>
+
+
+<div class="sticky-cta">
+  <a href="https://bambosoo.pl/products/matachlodzaca">SPRAWDŹ CENĘ I DOSTĘPNOŚĆ 👉</a>
+</div>
+</body>
+</html>
